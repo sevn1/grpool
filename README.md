@@ -29,8 +29,6 @@ func first() {
 
 	// submit one or more jobs to pool
 	for i := 0; i < 10; i++ {
-		count := i
-
 		pool.AddFunc(functest,i)
 	}
 
